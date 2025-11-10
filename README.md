@@ -1,24 +1,35 @@
-🅿️ Control de Acceso Concurrente a un Aparcamiento con Semaphore
-📘 Descripción
+# 🅿️ Control de Acceso Concurrente a un Aparcamiento con Semaphore
 
-Este proyecto simula un aparcamiento con plazas limitadas (3) al que intentan acceder 7 coches concurrentemente, utilizando Semaphore para controlar el acceso a los recursos compartidos. Cada coche es un hilo independiente que entra, permanece entre 1 y 4 segundos y luego libera la plaza.
+## 📘 Descripción
 
-🧩 Estructura del proyecto
+Este proyecto simula un aparcamiento con plazas limitadas (**3**) al que intentan acceder **7 coches** de forma concurrente, utilizando la clase `Semaphore` de Java para controlar el acceso a los recursos compartidos. Cada coche es representado por un hilo independiente que:
 
-Aparcamiento.java → controla el semáforo y gestiona las plazas.
+- Intenta entrar al aparcamiento.
+- Permanece estacionado entre **1 y 4 segundos** (aleatorio).
+- Finalmente, libera la plaza para otro coche.
 
-Coche.java → representa cada hilo que intenta aparcar.
+## 🧩 Estructura del proyecto
 
-PrincipalParking.java → crea el aparcamiento y lanza los 7 hilos concurrentes.
+- **Aparcamiento.java**  
+  Controla el semáforo y gestiona las plazas libres del aparcamiento.
 
-▶️ Ejecución
+- **Coche.java**  
+  Representa cada hilo que intenta aparcar en el parking.
 
-Compila todas las clases en el paquete Repaso.
+- **PrincipalParking.java**  
+  Crea la instancia de aparcamiento y lanza los 7 hilos de coches concurrentemente.
+
+## ▶️ Ejecución
+
+### Compilar
 
 javac Repaso/*.java
 
-
-Ejecuta la clase principal:
+### Ejecutar
 
 java Repaso.PrincipalParking
+
+---
+
+**Autor:** [AdanGavira](https://github.com/AdanGavira)
 
