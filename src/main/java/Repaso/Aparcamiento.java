@@ -32,8 +32,11 @@ public class Aparcamiento {
     }
 
     public void salir(String nombre){
-        System.out.println(nombre + " ha salido. Plazas Ocupadas: " + (PlazasOcupadas - 1));
-        PlazasOcupadas--; //Disminución de los coches
+
+        synchronized (this){
+            PlazasOcupadas--;//Disminución de los coches
+            System.out.println(nombre + " ha salido. Plazas Ocupadas: " + (PlazasOcupadas));
+        }
         semaforo.release();
     }
 }
