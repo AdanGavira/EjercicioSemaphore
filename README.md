@@ -22,12 +22,3 @@ Ejecuta la clase principal:
 
 java Repaso.PrincipalParking
 
-
-🖼️ Ejemplo de salida
-Coche-1 está esperando para entrar...
-Coche-1 ha entrado. Plazas ocupadas: 1/3
-Coche-2 ha entrado. Plazas ocupadas: 2/3
-Coche-3 ha entrado. Plazas ocupadas: 3/3
-Coche-4 está esperando para entrar...
-Coche-1 ha salido. Plazas ocupadas: 2/3
-Coche-4 ha entrado. Plazas ocupadas: 3/3
